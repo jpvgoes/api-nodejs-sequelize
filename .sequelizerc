@@ -1,0 +1,11 @@
+// This file is used to configure Sequelize CLI paths for models, seeders, migrations, and config files.
+
+const path = require("path");
+
+module.exports = {
+  //The path.resolve() method takes a sequence of paths or path segments and resolves them into an absolute path. It processes the paths from right to left and appends each path until an absolute path is constructed.
+  config: path.resolve("./src/config", "config.json"),
+  "models-path": path.resolve("./src/models"),
+  "seeders-path": path.resolve("./src/seeders"),
+  "migrations-path": path.resolve("./src/migrations"),
+};
